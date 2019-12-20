@@ -1,34 +1,19 @@
 public class DataTypeExample {
 
     /**
-    * This is an example class
-     * */
-
-
-
-    public void displayCarInfo(String brand, String chasisNum) {
-
-        System.out.print("");
-    }
-
-
+     * This is an example class
+     */
 
     public static void main(String[] args) {
 
-        /* Car attributes */
+        Car car = new Car(4, 2, 4, "b", false, "abc", "test"); //estamos instanciando una clase.
 
-    /* Primitives */
-    int qtyWheels = 0;
-    int qtyLights = 0;
-    int qtyDoors = 0;
-    char prefixDomain = "A";
-    boolean turnedOn = false;
+        car.setDoors(2);
+        car.setFulldomain("DEFEFE");
 
-    /* Non primitives */
-        String brand = "Ford";
-        String fulldomain = null;
-
-        final String CHASIS_NUM = "ASDFG12345QWERT";
+        car.getBrand();
+        car.getDoors();
+        car.getCHASIS_NUM();
 
     }
 }
