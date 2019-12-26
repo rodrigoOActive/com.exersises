@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class DataTypeExample {
 
     /**
@@ -6,7 +8,10 @@ public class DataTypeExample {
 
     public static void main(String[] args) {
 
-        Car car = new Car(4, 2, 4, "b", false, "abc", "test"); //estamos instanciando una clase.
+        Car carOne = new Car(4, 2, 4, "b", false, "abc", "test"); carOne
+        Car carTwo = new Car(4, 2, 4, "b", false, "abc", "test"); carTwo
+        Car carNnn = new Car(4, 2, 4, "b", false, "abc", "test"); carNnn
+
 
         car.setDoors(2);
         car.setFulldomain("DEFEFE");
@@ -15,5 +20,12 @@ public class DataTypeExample {
         car.getDoors();
         car.getCHASIS_NUM();
 
+        ArrayList<Car> carArrayList = new ArrayList<Car>(); carArrayList: size = 0;
+
+        carArrayList.add(carOne); carArrayList: carOne: Car
+
+        carArrayList.add(carTwo);
+
+        carArrayList.add(carNnn);
     }
 }
